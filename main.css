@@ -15,11 +15,18 @@ html {
   font-size: 1.6rem;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 main {
   position: relative;
 
+  display: flex;
+  flex-direction: column;
+
   justify-content: center;
-  align-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -141,6 +148,7 @@ header nav li {
 /* --------------------------------------------------- */
 
 .introduction {
+  width: 100vw;
   height: 80rem;
   background-color: #f2e9d8;
 
@@ -211,20 +219,90 @@ article {
   border-radius: 3rem;
   color: white;
 
+  display: flex;
+  flex-direction: column;
   text-align: left;
   justify-content: center;
   align-content: center;
 
-  position: relative;
+  position: absolute;
+  bottom: 0;
 
   background-color: #263140;
+
+  margin-bottom: 24.6rem;
 }
 article h2 {
   font-size: 3.6rem;
   font-weight: bold;
+
+  margin-left: 6rem;
+  margin-bottom: 1.8rem;
 }
 article p {
   font-weight: normal;
+
+  margin-left: 6rem;
+}
+
+article div {
+  position: absolute;
+  right: 6rem;
+
+  display: flex;
+  align-items: center;
+}
+article div input {
+  width: 47rem;
+  height: 6rem;
+  border-radius: 6rem;
+
+  padding-left: 6rem;
+}
+article div::before {
+  content: "";
+
+  width: 2.4rem;
+  height: 2.4rem;
+  background-image: url(src/mail.svg);
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 2.8rem;
+}
+article div input::placeholder {
+  /* padding-left: 6rem; */
+}
+article div button {
+  position: absolute;
+  right: 0.5rem;
+}
+
+/* ---------------------- 아티클끝 ----------------------- */
+
+.underBg {
+  width: 100vw;
+  height: 34rem;
+  background-color: rgb(242, 233, 216);
+  opacity: 0.6;
+
+  overflow: hidden;
+
+  position: relative;
+  z-index: -100;
+}
+.underBgImg {
+  width: 100vw;
+  height: 34rem;
+
+  background-image: url(src/img_5.jpg);
+  background-position: 50% 40%;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -150;
+  object-fit: cover;
 }
 
 /* --------------------------------------------------- */
