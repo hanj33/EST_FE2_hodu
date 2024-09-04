@@ -13,6 +13,8 @@ html {
 * {
   font-family: "SpoqaHanSansNeo-Regular";
   font-size: 1.6rem;
+
+  line-height: 1.4;
 }
 
 body {
@@ -175,6 +177,86 @@ header nav li {
   margin-top: 14rem;
 }
 
+/* --------------------------------------------------- */
+
+.introduce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: left;
+
+  margin-top: 8rem;
+}
+
+.introduce img {
+  width: 66rem;
+  height: 39rem;
+  object-fit: cover;
+  object-position: 50% 33%;
+  border-radius: 3rem;
+
+  box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 0.25);
+}
+.introduce div {
+  margin-left: 11rem;
+}
+
+.introduce h2 {
+  font-size: 3.6rem;
+  font-weight: bold;
+
+  margin-bottom: 3rem;
+}
+
+/* --------------------------------------------------- */
+
+.hoduImgList {
+  margin-top: 12rem;
+}
+.hoduImgList h2 {
+  color: var(--main-color);
+  font-size: 4.8rem;
+  font-weight: bold;
+}
+.hoduImgList span {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.hoduImgList p {
+  margin-top: 4rem;
+}
+
+.scrollList {
+  display: flex;
+  gap: 7rem;
+
+  margin-top: 9rem;
+}
+
+.scrollList img {
+  width: 37.8rem;
+  border-radius: 3rem;
+
+  box-shadow: 1rem 1rem 3rem 0 rgba(0, 0, 0, 0.25);
+}
+.scrollList li {
+  display: inline-block;
+}
+
+/* --------------------------------------------------- */
+
+.learnMore {
+  margin-top: 9rem;
+  margin-bottom: 20rem;
+
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
 /* ---------------------- 위로가기 ----------------------- */
 
 .goToTop {
@@ -192,13 +274,19 @@ header nav li {
   bottom: 18.4rem;
 
   z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.goToTop div {
+.goToTop span {
   width: 1.4rem;
   height: 1.4rem;
   border: 5px solid #c4c4c4;
   border-bottom: 0;
   border-left: 0;
+
+  display: block;
 
   transform: rotate(-45deg);
 
@@ -207,7 +295,10 @@ header nav li {
   left: 1.55rem;
 }
 
-.goToTop:hover div {
+.goToTop:hover {
+  cursor: pointer;
+}
+.goToTop:hover span {
   border-color: #767676;
 }
 
