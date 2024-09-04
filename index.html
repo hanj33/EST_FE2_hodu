@@ -10,16 +10,26 @@
   <body>
     <header>
       <h1>
-        <a href="#">
+        <a href="index.html">
           <img src="src/logo.svg" alt="호두" />
         </a>
       </h1>
-      <ol>
-        <a href="#"> Home </a>
-        <a href="#"> About </a>
-        <a href="#"> Support </a>
-      </ol>
-      <a href="#" class="download btnGo btn"> Download </a>
+      <div class="headerNav">
+        <nav>
+          <ol>
+            <li>
+              <a href="#"> Home </a>
+            </li>
+            <li>
+              <a href="#"> About </a>
+            </li>
+            <li>
+              <a href="#"> Support </a>
+            </li>
+          </ol>
+        </nav>
+        <a href="#" class="download btnGo btn"> Download </a>
+      </div>
     </header>
 
     <!-- --------------------------------------------------- -->
@@ -35,7 +45,9 @@
 
     <!-- ----------------------모달끝----------------------- -->
 
-    <button type="button" class="goToTop"></button>
+    <button type="button" class="goToTop">
+      <div></div>
+    </button>
 
     <!-- ----------------------위로가기----------------------- -->
 
@@ -45,18 +57,22 @@
 
     <main>
       <section class="introduction">
-        <h2>Lorem Ipsum is simply dummy text of the printing and</h2>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown
-        </p>
-        <a href="#" class="download btnGo btn"> Download </a>
+        <div>
+          <h2>Lorem Ipsum is simply <br />dummy text of the printing and</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+            <br />
+            Lorem Ipsum has been the industry's standard dummy text ever since
+            the 1500s, when an unknown
+          </p>
+          <a href="#" class="download btnGo btn"> Download </a>
+        </div>
         <img src="src/box-cat.png" alt="상자를 쓴 고양이 호두" />
       </section>
 
       <section class="introduce">
-        <img src="src/img_4.jpg" alt="침대에 누운 고양이 호두" />
+        <!-- <img src="src/img_4.jpg" alt="침대에 누운 고양이 호두" /> -->
         <h2>Lorem Ipsum is simply dummy text of the printing and dummy text</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -73,10 +89,10 @@
         </p>
         <ul class="scrollList">
           <li>
-            <img src="src/img_1.jpg" alt="캣타워에 올라간 호두" />
+            <!-- <img src="src/img_1.jpg" alt="캣타워에 올라간 호두" /> -->
           </li>
           <li>
-            <img src="src/img_2.jpg" alt="호두의 뒷모습" />
+            <!-- <img src="src/img_2.jpg" alt="호두의 뒷모습" /> -->
           </li>
           <li>
             <img src="src/img_3.jpg" alt="집중한 호두" />
@@ -98,7 +114,9 @@
         <h2>Subscribe to our Blog post</h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text
+          industry.
+          <br />
+          Lorem Ipsum has been the industry's standard dummy text
         </p>
 
         <input type="email" placeholder="Enter your e-mail address" />
@@ -113,27 +131,29 @@
     <!-- --------------------------------------------------- -->
 
     <footer>
-      <a href="##">
-        <img src="src/Logo-fin.svg" alt="호두" />
-      </a>
+      <h2>
+        <a href="##" class="footerLogo">
+          <img src="src/Logo-fin.svg" alt="호두" />
+        </a>
+      </h2>
       <ul class="snslist">
         <li>
-          <a href="#">
+          <a href="https://blog.naver.com" target="_blank">
             <img src="src/blog.svg" alt="블로그로 바로가기" />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.instagram.com/" target="_blank">
             <img src="src/instagram.svg" alt="인스타그램으로 바로가기" />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.facebook.com/" target="_blank">
             <img src="src/facebook.svg" alt="페이스북으로 바로가기" />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="https://www.youtube.com/" target="_blank">
             <img src="src/youtube.svg" alt="유튜브로 바로가기" />
           </a>
         </li>
