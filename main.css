@@ -437,3 +437,42 @@ footer ul li {
   display: inline-block;
   margin-left: 2rem;
 }
+
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+/* ---------------------- 반응형 ---------------------- */
+/* --------------------------------------------------- */
+/* --------------------------------------------------- */
+
+@media (max-width: 800px) {
+  header {
+    height: 7.6rem;
+  }
+
+  header h1 {
+    margin-left: 5%;
+  }
+
+  /* .headerNav {
+    width: 80%;
+    height: 200vh;
+    background-color: #263140;
+    right: 0;
+    color: white;
+    font-weight: bold;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    padding-left: 5rem;
+  }
+  header nav {
+    margin-left: 5rem;
+    margin-top: 12rem;
+  }
+  header nav li {
+    display: block;
+    margin-bottom: 3rem;
+  } */
+}
