@@ -1,4 +1,38 @@
 @media (max-width: 800px) {
+  button,
+  .btn {
+    font-size: 1.4rem;
+
+    padding: 1.1rem 2.4rem 1.1rem 2.4rem;
+  }
+
+  /* --------------------------------------------------- */
+  /* ---------------------- 모달 ----------------------- */
+  /* --------------------------------------------------- */
+  .modal {
+    width: 30rem;
+    height: 30rem;
+
+    line-height: 1.3;
+  }
+  .modal img {
+    width: 6rem;
+  }
+  .modal h2 {
+    font-size: 2.4rem;
+  }
+  .modal p {
+    margin-top: 1rem;
+    margin-bottom: 2.8rem;
+  }
+  .modal span {
+    display: block;
+  }
+
+  /* --------------------------------------------------- */
+  /* ---------------------- 모달끝 ----------------------- */
+  /* --------------------------------------------------- */
+
   header {
     height: 7.6rem;
   }
@@ -7,26 +41,345 @@
     margin-left: 5%;
   }
 
-  /* .headerNav {
-      width: 80%;
-      height: 200vh;
-      background-color: #263140;
-      right: 0;
-      color: white;
-      font-weight: bold;
-  
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
-  
-      padding-left: 5rem;
-    }
-    header nav {
-      margin-left: 5rem;
-      margin-top: 12rem;
-    }
-    header nav li {
-      display: block;
-      margin-bottom: 3rem;
-    } */
+  .headerNav {
+    visibility: hidden;
+  }
+
+  .menu {
+    display: inline-block;
+
+    position: absolute;
+    right: 5%;
+
+    opacity: 0;
+  }
+  .menuIcon {
+    position: absolute;
+    right: 5%;
+    top: 2.2rem;
+
+    width: 3.2rem;
+    height: 3.2rem;
+
+    content: "";
+    background-image: url(src/menu.svg);
+    background-repeat: no-repeat;
+  }
+
+  .menu:checked ~ .headerNav {
+    visibility: visible;
+
+    width: 80%;
+    height: 100vh;
+    background-color: #263140;
+    top: 0;
+    right: 0;
+    color: white;
+    font-weight: bold;
+
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+
+  header nav,
+  .headerNav .btn {
+    margin-left: 5rem;
+    margin-top: 12rem;
+  }
+
+  .headerNav .btn {
+    margin-top: 5rem;
+  }
+
+  header nav li {
+    display: block;
+    margin-bottom: 3rem;
+  }
+
+  .menuClose {
+    position: absolute;
+    left: 2rem;
+    top: 2.2rem;
+
+    width: 3.2rem;
+    height: 3.2rem;
+
+    content: "";
+    background-image: url(src/arrow-right.svg);
+    background-repeat: no-repeat;
+  }
+
+  /* --------------------------------------------------- */
+  /* ---------------------- 헤더끝 ----------------------- */
+  /* --------------------------------------------------- */
+
+  .introduction {
+    height: 80rem;
+
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+
+    position: relative;
+  }
+  .introduction span {
+    display: block;
+  }
+  .introduction div {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 8rem;
+
+    justify-content: center;
+    align-items: center;
+  }
+  .introduction h2 {
+    font-size: 2.4rem;
+
+    margin-bottom: 3rem;
+  }
+  .introduction p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+  }
+
+  .introduction img {
+    width: 19.7rem;
+
+    position: absolute;
+    bottom: -6rem;
+    /* 
+    order: 5; */
+  }
+
+  /* --------------------------------------------------- */
+
+  .introduce {
+    flex-direction: column;
+
+    margin-top: 8rem;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .introduceImg {
+    width: 100%;
+    height: 0;
+    padding-top: 58%;
+    border-radius: 1.8rem;
+
+    position: relative;
+    box-shadow: 1rem 1rem 2rem 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .introduce div {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .introduce h2 {
+    font-size: 2.4rem;
+
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  /* --------------------------------------------------- */
+
+  .hoduImgList {
+    margin-top: 6rem;
+  }
+  .hoduImgList h2 {
+    font-size: 2.4rem;
+  }
+  .hoduImgList h2 span {
+    display: block;
+  }
+  .hoduImgList p {
+    margin-top: 3rem;
+  }
+  .hoduImgList p .lineEnter {
+    display: block;
+    color: inherit;
+    font-weight: inherit;
+  }
+
+  .scrollList {
+    overflow-x: scroll;
+    gap: 2rem;
+    max-width: 100vw;
+
+    padding-bottom: 3rem;
+    margin-top: 4rem;
+  }
+  .scrollList::-webkit-scrollbar {
+    height: 1rem;
+  }
+  .scrollList::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 1rem;
+  }
+  .scrollList::-webkit-scrollbar-thumb {
+    background-color: #d97652;
+    border-radius: 1rem;
+    margin: 3rem;
+  }
+  .scrollList::-webkit-scrollbar-button {
+    display: none;
+  }
+
+  .scrollList:first-child {
+    padding-left: 10%;
+  }
+  .scrollList:last-child {
+    padding-right: 10%;
+  }
+
+  .scrollList img {
+    width: 26rem;
+    border-radius: 1.8rem;
+
+    box-shadow: 1rem 1rem 2rem 0 rgba(0, 0, 0, 0.25);
+  }
+  .scrollList li {
+    display: inline-block;
+  }
+
+  /* --------------------------------------------------- */
+
+  .learnMore {
+    margin-top: 6rem;
+    margin-bottom: 33rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+    flex-direction: column;
+
+    gap: 3rem;
+  }
+  .learnMore a {
+    align-self: flex-end;
+  }
+
+  /* ---------------------- 위로가기 ----------------------- */
+  .goToTop {
+    display: none;
+  }
+  /* ---------------------- 아티클 ----------------------- */
+
+  article {
+    width: 33rem;
+    height: 35rem;
+    border-radius: 1.8rem;
+
+    margin-bottom: 17.2rem;
+
+    justify-content: start;
+  }
+  article span {
+    display: block;
+  }
+  article h2 {
+    font-size: 2.4rem;
+
+    margin-top: 3.6rem;
+    margin-left: 3.2rem;
+    margin-bottom: 2rem;
+  }
+  article p {
+    margin-left: 3.2rem;
+    font-size: 1.4rem;
+  }
+
+  article div {
+    width: 26.2rem;
+
+    left: 3.2rem;
+    bottom: 9rem;
+  }
+  article div input {
+    height: 4rem;
+
+    font-size: 1.2rem;
+
+    padding-left: 4.8rem;
+  }
+  article div::before {
+    width: 1.8rem;
+    height: 1.8rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    left: 1.6rem;
+  }
+
+  article div button {
+    position: absolute;
+    top: 6rem;
+  }
+
+  /* ---------------------- 아티클끝 ----------------------- */
+
+  .underBg {
+    height: 24rem;
+  }
+  .underBgImg {
+    height: 24rem;
+
+    background-position: 50% 40%;
+
+    background-size: cover;
+  }
+
+  /* --------------------------------------------------- */
+  /* ---------------------- 메인끝 ----------------------- */
+  /* --------------------------------------------------- */
+
+  footer {
+    height: 18rem;
+  }
+
+  footer h2 {
+    left: 5%;
+    top: 3rem;
+  }
+  footer h2 img {
+    width: 11.2rem;
+  }
+  .snslist {
+    left: calc(5% - 1.8rem);
+    bottom: 2.4rem;
+  }
+
+  .snslist li {
+    width: 3.2rem;
+    height: 3.2rem;
+
+    margin-left: 1.6rem;
+  }
+  .snslist li img {
+    width: 1.8rem;
+  }
+
+  .footerMenu {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: right;
+    text-align: right;
+
+    right: 5%;
+    bottom: 3rem;
+  }
+  .footerMenu ul li {
+    color: #767676;
+
+    text-align: right;
+
+    font-size: 1.4rem;
+    margin-top: 2rem;
+  }
 }

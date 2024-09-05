@@ -6,6 +6,7 @@
     <title>랜딩페이지 구현</title>
     <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./mobile.css" />
   </head>
   <body>
     <header>
@@ -14,11 +15,15 @@
           <img src="src/logo.svg" alt="호두" />
         </a>
       </h1>
+
+      <input type="checkbox" class="menu" id="menu" />
+      <label for="menu" class="menuIcon"></label>
+
       <div class="headerNav">
         <nav>
           <ol>
             <li>
-              <a href="#"> Home </a>
+              <a href="index.html"> Home </a>
             </li>
             <li>
               <a href="#"> About </a>
@@ -29,6 +34,7 @@
           </ol>
         </nav>
         <a href="#" class="download btnGo btn"> Download </a>
+        <label for="menu" class="menuClose"></label>
       </div>
     </header>
 
@@ -39,7 +45,9 @@
     <div class="modal">
       <img src="src/cat-subscribe.png" alt="" />
       <h2>Thank you!</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing industry.</p>
+      <p>
+        Lorem Ipsum is simply dummy <span>text of the printing industry.</span>
+      </p>
       <button class="button btn">OK! I Love HODU</button>
     </div>
 
@@ -56,13 +64,18 @@
     <main>
       <section class="introduction">
         <div>
-          <h2>Lorem Ipsum is simply <br />dummy text of the printing and</h2>
+          <h2>
+            Lorem Ipsum is simply <br />dummy text
+            <span>of the printing and</span>
+          </h2>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry.
-            <br />
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s, when an unknown
+            Lorem Ipsum is simply dummy text
+            <span
+              >of the printing and typesetting industry.
+              <br />
+              Lorem Ipsum has been the industry's </span
+            >standard dummy text ever since the 1500s,
+            <span>when an unknown</span>
           </p>
           <a href="#" class="download btnGo btn"> Download </a>
         </div>
@@ -70,8 +83,11 @@
       </section>
 
       <section class="introduce">
-        <img src="src/img_4.jpg" alt="침대에 누운 고양이 호두" />
-        <div>
+        <h2 class="sr-only">호두 소개</h2>
+        <div class="introduceImg">
+          <img src="src/img_4.jpg" alt="침대에 누운 고양이 호두" />
+        </div>
+        <div class="introduceText">
           <h2>
             Lorem Ipsum is simply <br />dummy text of the printing <br />
             and dummy text
@@ -85,23 +101,30 @@
       </section>
 
       <section class="hoduImgList">
-        <h2>dummy text of the printing and dummy</h2>
+        <h2>dummy text of the printing <span>and dummy</span></h2>
         <p>
-          Lorem Ipsum is simply <span>dummy text of</span> the printing and
-          typesetting industry. <br />Lorem Ipsum has been the industry's
-          standard dummy text ever since the 1500s, when an unknown
+          Lorem Ipsum is simply <span>dummy text of</span>
+          <span class="lineEnter">
+            the printing and typesetting industry. <br />Lorem Ipsum has been
+            the industry's</span
+          >
+          standard dummy text ever since the 1500s,<span class="lineEnter">
+            when an unknown</span
+          >
         </p>
-        <ul class="scrollList">
-          <li>
-            <img src="src/img_1.jpg" alt="캣타워에 올라간 호두" />
-          </li>
-          <li>
-            <img src="src/img_2.jpg" alt="호두의 뒷모습" />
-          </li>
-          <li>
-            <img src="src/img_3.jpg" alt="집중한 호두" />
-          </li>
-        </ul>
+        <div>
+          <ul class="scrollList">
+            <li>
+              <img src="src/img_1.jpg" alt="캣타워에 올라간 호두" />
+            </li>
+            <li>
+              <img src="src/img_2.jpg" alt="호두의 뒷모습" />
+            </li>
+            <li>
+              <img src="src/img_3.jpg" alt="집중한 호두" />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="learnMore">
@@ -115,14 +138,14 @@
       </section>
 
       <article class="subscribe">
-        <h2>Subscribe to our Blog post</h2>
+        <h2>Subscribe to our <span>Blog post</span></h2>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry.
           <br />
           Lorem Ipsum has been the industry's standard dummy text
         </p>
-        <div>
+        <div class="typeEmail">
           <input type="email" placeholder="Enter your e-mail address" />
           <button type="button" class="button btn">Subscribe</button>
         </div>
@@ -164,6 +187,24 @@
           </a>
         </li>
       </ul>
+      <div class="footerMenu">
+        <ul>
+          <li>
+            <a href="https://blog.naver.com" target="_blank"> About </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"> Blog </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"> Support </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/" target="_blank">
+              Terms of Use
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
