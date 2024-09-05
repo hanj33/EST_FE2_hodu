@@ -444,7 +444,7 @@ footer ul li {
 /* --------------------------------------------------- */
 /* --------------------------------------------------- */
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   header {
     height: 7.6rem;
   }
@@ -453,7 +453,7 @@ footer ul li {
     margin-left: 5%;
   }
 
-  /* .headerNav {
+  .headerNav {
     width: 80%;
     height: 200vh;
     background-color: #263140;
@@ -474,5 +474,5 @@ footer ul li {
   header nav li {
     display: block;
     margin-bottom: 3rem;
-  } */
-}
+  }
+} */
