@@ -54,6 +54,9 @@
     opacity: 0;
   }
   .menuIcon {
+    display: inline;
+    color: rgba(0, 0, 0, 0);
+
     position: absolute;
     right: 5%;
     top: 2.2rem;
@@ -61,7 +64,6 @@
     width: 3.2rem;
     height: 3.2rem;
 
-    content: "";
     background-image: url(src/menu.svg);
     background-repeat: no-repeat;
   }
@@ -111,6 +113,9 @@
   }
 
   .menuClose {
+    display: inline;
+    color: rgba(0, 0, 0, 0);
+
     position: absolute;
     left: 2rem;
     top: 2.2rem;

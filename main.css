@@ -164,7 +164,9 @@ header nav li {
   top: 3rem;
 } */
 
-.menu {
+.menu,
+.menuIcon,
+.menuClose {
   display: none;
 }
 
@@ -305,6 +307,8 @@ header nav li {
   height: 5rem;
   border-radius: 50%;
 
+  color: rgba(0, 0, 0, 0);
+
   background-color: white;
   border: solid 0.1rem #c4c4c4;
 
@@ -319,6 +323,7 @@ header nav li {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .goToTop span {
   width: 1.4rem;
