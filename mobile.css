@@ -72,6 +72,8 @@
     width: 80%;
     height: 100vh;
     background-color: #263140;
+    box-shadow: 0 0 3rem 0 rgba(0, 0, 0, 0.4);
+
     top: 0;
     right: 0;
     color: white;
@@ -148,12 +150,15 @@
     align-items: center;
   }
   .introduction h2 {
-    font-size: 2.4rem;
+    /* font-size: 2.4rem; */
+    font-size: clamp(2.4rem, 4vw, 3.2rem);
 
     margin-bottom: 3rem;
   }
   .introduction p {
     font-size: 1.4rem;
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
+
     margin-bottom: 3rem;
   }
 
